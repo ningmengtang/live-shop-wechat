@@ -1,0 +1,45 @@
+.idm {
+	padding: 30rpx;
+	background-color: #fff;
+	border: 2rpx solid #eee;
+	margin: 20rpx 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.idm .tip {
+	width: 150rpx;
+}
+
+.idm .input {
+	margin-left: 20rpx;
+	width: 80%;
+}
+
+.idm .input.num {
+	text-align: right;
+	color: #999999;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.idm .input.num .i {
+	width: 80%;
+	margin-right: 10rpx;
+}
+
+.idm .input.num .weui-input {
+	width: 80rpx;
+}
+
+.bottom {
+	font-weight: bold;
+	border-radius: 4rpx;
+	color: #fff;
+	margin: 80rpx 20rpx 20rpx 20rpx;
+	padding: 20rpx !important;
+	line-height: normal;
+	text-align: center;
+	background-color: #118ee9 !important;
+}

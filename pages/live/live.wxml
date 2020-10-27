@@ -1,0 +1,5 @@
+<view class="box">
+	<view class="live-box" style="background-image:url({{live_background}});">
+		<button bindtap="goLive">直播</button>
+	</view>
+</view>

@@ -1,0 +1,23 @@
+<view class="container ">
+	<scroll-view scroll-y="true">
+		<form bindsubmit="formSubmit">
+			<view class="idm">
+				<view class="tip">商品编号</view>
+				<view class="input"><input class="weui-input" name="goods_code" placeholder="请输入商品编号" value="A-JS002821934" /></view>
+			</view>
+			<view class="idm">
+				<view class="tip">商品售价</view>
+				<view class="input"><input class="weui-input" name="goods_price" type="number" maxlength="10" placeholder="请输入商品售价" /></view>
+			</view>
+			<view class="idm">
+				<view class="tip">商品数量</view>
+				<view class="input num">
+					<input class="weui-input" name="goods_num" maxlength="10" disabled="disabled" placeholder="1" value="x1" /></view>
+			</view>
+			<button class="bottom" type="primary" formType="submit">
+				提交订单
+			</button>
+		</form>
+
+	</scroll-view>
+</view>

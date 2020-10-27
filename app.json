@@ -11,10 +11,12 @@
     "pages/user/help",
     "pages/order/index",
     "pages/order/detail",
+	"pages/order/submit",
     "pages/address/index",
     "pages/address/create",
     "pages/address/detail",
-    "pages/login/login"
+    "pages/login/login",
+	"pages/live/live"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
@@ -35,16 +37,10 @@
         "selectedIconPath": "images/tabBar/home_on.png"
       },
       {
-        "pagePath": "pages/category/index",
-        "text": "全部",
-        "iconPath": "images/tabBar/cate.png",
-        "selectedIconPath": "images/tabBar/cate_on.png"
-      },
-      {
-        "pagePath": "pages/flow/index",
-        "text": "购物车",
-        "iconPath": "images/tabBar/cart.png",
-        "selectedIconPath": "images/tabBar/cart_on.png"
+        "pagePath": "pages/live/live",
+        "text": "直播",
+        "iconPath": "images/tabBar/live-l.png",
+        "selectedIconPath": "images/tabBar/live-l-on.png"
       },
       {
         "pagePath": "pages/user/index",
@@ -56,5 +52,11 @@
     "position": "bottom"
   },
   "debug": false,
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "plugins": {
+      "live-player-plugin": {
+          "version": "1.2.2", 
+          "provider": "wx2b03c6e691cd7370" 
+      }
+  }
 }

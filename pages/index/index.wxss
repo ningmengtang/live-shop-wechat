@@ -4,38 +4,47 @@
 /* banner组件 */
 @import "components/banner/banner.wxss";
 
-/* 猜您喜欢 */
-
-.title-hrbg {
-  position: relative;
-  z-index: 1;
-  height: 80rpx;
-  line-height: 80rpx;
-  overflow: hidden;
-  color: #888;
-  text-align: center;
-  margin-top: 30rpx;
+image {
+	width: 100%;
+	height: 100%;
 }
 
-.title-hrbg .cont {
-  background: #f7f7f7;
-  padding: 1rem 0.6rem;
-  font-size: 28rpx;
-  z-index: 10;
+.content {
+	padding: 20rpx;
 }
 
-.title-hrbg .cont .icon-huo {
-  padding-right: 10rpx;
+.banner {
+	height: 400rpx;
 }
 
-.title-hrbg .hr {
-  background: #ddd;
-  height: 1rpx;
-  border: 0;
-  position: absolute;
-  left: 10%;
-  right: 10%;
-  top: 50%;
-  margin-top: 1px;
-  z-index: -1;
+.order {
+	margin: 20rpx 0;
+	height: 240rpx;
+	display: flex;
+	justify-content: space-around;
+}
+
+.order .box {
+	width: calc(50% - 10rpx);
+	border: 1rpx solid #999999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 36rpx;
+}
+
+.order .box:first-child {
+	background-color: #fff;
+}
+
+.order .box:nth-child(2) {
+	background-color: #999999;
+}
+
+.order .box+.box {
+	margin-left: 20rpx;
+}
+
+.banner+.banner {
+	margin-top: 20rpx;
 }

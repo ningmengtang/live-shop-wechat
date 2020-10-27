@@ -2,6 +2,6 @@
  * 配置文件
  */
 module.exports = {
-  name: "萤火小程序商城",
-  siteroot: "http://yoshop.cn/", // 必填: api地址，结尾要带/
+  name: "翡翠公园",
+  siteroot: "https://live.cooyum.com/", // 必填: api地址，结尾要带/
 };
