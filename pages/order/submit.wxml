@@ -3,7 +3,7 @@
 		<form bindsubmit="formSubmit">
 			<view class="idm">
 				<view class="tip">商品编号</view>
-				<view class="input"><input class="weui-input" name="goods_code" placeholder="请输入商品编号" value="A-JS002821934" /></view>
+				<view class="input"><input class="weui-input" name="goods_code" placeholder="请输入商品编号" value="" /></view>
 			</view>
 			<view class="idm">
 				<view class="tip">商品售价</view>

@@ -176,10 +176,10 @@ Page({
 		}, () => {
 			// complete
 			let info = this.data.create_data.data.staff;
-			console.log('complete');
+			let tipInfo = this.data.create_data.data;
 			wx.showModal({
-				title: '提交成功',
-				content: `请联系您的专属客服处理\n客服：${info.nickname}\n手机：${info.phone}\n微信号：${info.wechat}`,
+				title: tipInfo.tip_title,
+				content: tipInfo.tip_message,
 				cancelText: '继续下单',
 				confirmText: '查看订单',
 				success(res) {

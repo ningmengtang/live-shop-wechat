@@ -115,10 +115,11 @@ Page({
 				return false;
 			}
 			let info = result.data.staff;
+			let tipInfo = result.data;
 			wx.showModal({
-				title: '提示',
+				title: tipInfo.tip_title,
+				content: tipInfo.tip_message,
 				showCancel: false,
-				content: `请联系您的专属客服处理\n客服：${info.nickname}\n手机：${info.phone}\n微信号：${info.wechat}`,
 				success(res) {
 					if (res.confirm) {
 
