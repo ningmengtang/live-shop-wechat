@@ -15,21 +15,25 @@ Page({
 		best: {},
 		scrollTop: 0,
 		// 直播配置
-		roomId: [4],
 		customParams: encodeURIComponent(JSON.stringify({
 			path: 'pages/index/index',
 			pid: 1
 		})),
 		info: [],
+		//分享传过来的值
+		invite_id: '',
+		options: {},
 	},
 
-	onLoad() {
+	onLoad(options) {
 		// 设置页面标题
 		App.setTitle();
 		// 设置navbar标题、颜色
 		App.setNavigationBar();
 		// 获取首页数据
 		this.getIndexData();
+		// 判断是分享和分享进来的
+		App.userShare(options.invite_id);
 	},
 	//启动的生命周期
 	onShow() {
@@ -72,12 +76,17 @@ Page({
 		});
 	},
 
-
+	//下拉刷新事件
+	onPullDownRefresh() {
+		this.getIndexData();
+		wx.stopPullDownRefresh()
+	},
+	//开启分享功能
 	onShareAppMessage: function() {
 		return {
-			title: "小程序首页",
-			desc: "",
-			path: "/pages/index/index"
+			title: "首页",
+			desc: '',
+			path: `/pages/index/index?invite_id=${wx.getStorageSync('user_id')}`
 		};
 	},
 

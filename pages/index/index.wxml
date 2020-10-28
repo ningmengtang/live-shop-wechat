@@ -1,25 +1,17 @@
 <view>
-
-	<!-- <scroll-view bindscroll="scroll" scroll-top="{{scrollTop}}" scroll-y="true" style="position:absolute; top:0; left:0; right:0; bottom:0;"> -->
-	<!-- 直播 -->
-	<!-- <navigator url="plugin-private://wx2b03c6e691cd7370/pages/live-player-plugin?room_id={{roomId}}&custom_params={{customParams}}" ><view>直播间</view></navigator>-->
 	<view class="content">
-		<block wx:for="{{info.banners}}" wx:for-item="item" wx:for-index="i" wx:key="i">
+		<navigator url="/pages/about/index">
 			<view class="banner">
-				<image src="{{item}}"></image>
+				<image src="{{info.banner}}"></image>
 			</view>
-		</block>
+		</navigator>
 		<view class="order">
 			<navigator url="/pages/order/submit" class="box">
-				<view>立即下单</view>
+				<view>自助下单</view>
 			</navigator>
 			<view class="box">
 				<image src="{{info.image}}"></image>
 			</view>
 		</view>
 	</view>
-	<!-- </scroll-view> -->
-
-
-
 </view>

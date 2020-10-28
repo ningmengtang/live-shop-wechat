@@ -1,0 +1,7 @@
+<view class="container">
+	<view class="image-box">
+		<block wx:for="{{images}}" wx:for-item="item" wx:for-index="i" wx:key="i">
+			<image src="{{item}}" mode="widthFix"></image>
+		</block>
+	</view>
+</view>

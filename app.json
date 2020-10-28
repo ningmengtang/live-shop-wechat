@@ -1,62 +1,62 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/category/index",
-    "pages/category/list",
-    "pages/goods/index",
-    "pages/search/index",
-    "pages/flow/index",
-    "pages/flow/checkout",
-    "pages/user/index",
-    "pages/user/help",
-    "pages/order/index",
-    "pages/order/detail",
-	"pages/order/submit",
-    "pages/address/index",
-    "pages/address/create",
-    "pages/address/detail",
-    "pages/login/login",
-	"pages/live/live"
-  ],
-  "window": {
-    "navigationBarBackgroundColor": "#ffffff",
-    "navigationBarTitleText": "",
-    "navigationBarTextStyle": "black",
-    "backgroundTextStyle": "dark"
-  },
-  "tabBar": {
-    "color": "#6e6d6b",
-    "selectedColor": "#ff9966",
-    "borderStyle": "black",
-    "backgroundColor": "#ffffff",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "images/tabBar/home.png",
-        "selectedIconPath": "images/tabBar/home_on.png"
-      },
-      {
-        "pagePath": "pages/live/live",
-        "text": "直播",
-        "iconPath": "images/tabBar/live-l.png",
-        "selectedIconPath": "images/tabBar/live-l-on.png"
-      },
-      {
-        "pagePath": "pages/user/index",
-        "text": "我的",
-        "iconPath": "images/tabBar/user.png",
-        "selectedIconPath": "images/tabBar/user_on.png"
-      }
-    ],
-    "position": "bottom"
-  },
-  "debug": false,
-  "sitemapLocation": "sitemap.json",
-  "plugins": {
-      "live-player-plugin": {
-          "version": "1.2.2", 
-          "provider": "wx2b03c6e691cd7370" 
-      }
-  }
+	"pages": [
+		"pages/index/index",
+		"pages/category/index",
+		"pages/category/list",
+		"pages/goods/index",
+		"pages/search/index",
+		"pages/flow/index",
+		"pages/flow/checkout",
+		"pages/user/index",
+		"pages/user/help",
+		"pages/order/index",
+		"pages/order/detail",
+		"pages/order/submit",
+		"pages/address/index",
+		"pages/address/create",
+		"pages/address/detail",
+		"pages/login/login",
+		"pages/live/live",
+		"pages/about/index"
+	],
+	"window": {
+		"navigationBarBackgroundColor": "#ffffff",
+		"navigationBarTitleText": "",
+		"navigationBarTextStyle": "black",
+		"backgroundTextStyle": "dark"
+	},
+	"tabBar": {
+		"color": "#6e6d6b",
+		"selectedColor": "#ff9966",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "images/tabBar/home.png",
+				"selectedIconPath": "images/tabBar/home_on.png"
+			},
+			{
+				"pagePath": "pages/live/live",
+				"text": "直播",
+				"iconPath": "images/tabBar/live-l.png",
+				"selectedIconPath": "images/tabBar/live-l-on.png"
+			},
+			{
+				"pagePath": "pages/user/index",
+				"text": "我的",
+				"iconPath": "images/tabBar/user.png",
+				"selectedIconPath": "images/tabBar/user_on.png"
+			}
+		],
+		"position": "bottom"
+	},
+	"debug": false,
+	"sitemapLocation": "sitemap.json",
+	"plugins": {
+		"live-player-plugin": {
+			"version": "1.2.2",
+			"provider": "wx2b03c6e691cd7370"
+		}
+	}
 }
